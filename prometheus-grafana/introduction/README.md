@@ -19,7 +19,7 @@ docker run -d --name prometheus \
 -p 9090:9090 prom/prometheus --web.enable-lifecycle
 ```
 
-## Grafana
+## Grafana
 
 ```bash
 mkdir grafana-data
