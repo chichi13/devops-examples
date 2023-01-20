@@ -1,0 +1,12 @@
+groups:
+  - name: default
+    rules:
+    - alert: cpu_load
+      expr: node_load1 >= 0.5
+      for: 10s
+      labels:
+        severity: critical
+      annotations:
+        summary: "{{ $labels.instance }} - load trop élevé"
+        description: "Trop de load (1m) sur le serveur."
+

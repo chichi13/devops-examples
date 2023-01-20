@@ -35,3 +35,6 @@ override.tf.json
 terraform.rc
 
 .DS_Store
+
+**/data
+**/grafana-data
